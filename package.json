@@ -1,0 +1,19 @@
+{
+  "name": "line-project-starter",
+  "version": "1.0.0",
+  "description": "Starter for LINE application with webhook API and LIFF on firebase cloud function.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "line",
+    "starter",
+    "api",
+    "liff",
+    "firebase",
+    "function"
+  ],
+  "author": "Sitthi Thiammekha",
+  "license": "ISC"
+}
