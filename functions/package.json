@@ -2,12 +2,13 @@
   "name": "functions",
   "scripts": {
     "lint": "tslint --project tsconfig.json",
-    "build": "tsc",
+    "build": "tsc && cp src/line-rich-menu/menu* lib/line-rich-menu/",
     "serve": "npm run build && firebase serve --only functions",
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
+    "logs": "firebase functions:log",
+    "menu": "npm run build && node lib/line-rich-menu/"
   },
   "main": "lib/index.js",
   "dependencies": {
@@ -15,7 +16,8 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "firebase-admin": "~6.0.0",
-    "firebase-functions": "^2.1.0"
+    "firebase-functions": "^2.1.0",
+    "fs": "0.0.1-security"
   },
   "devDependencies": {
     "tslint": "~5.8.0",
